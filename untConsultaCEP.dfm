@@ -1,0 +1,216 @@
+object frmConsultaCEP: TfrmConsultaCEP
+  Left = 0
+  Top = 0
+  ActiveControl = editCep
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Consulta CEP - WebService - XE2'
+  ClientHeight = 369
+  ClientWidth = 459
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 459
+    Height = 369
+    Align = alClient
+    Style = tsFlatButtons
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 459
+    Height = 369
+    Align = alClient
+    TabOrder = 1
+    object Panel2: TPanel
+      Left = 1
+      Top = 1
+      Width = 457
+      Height = 367
+      Align = alClient
+      BevelInner = bvLowered
+      BevelKind = bkFlat
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 24
+        Top = 24
+        Width = 23
+        Height = 13
+        Caption = 'CEP:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 186
+        Top = -2
+        Width = 260
+        Height = 13
+        Caption = 'Caminho para Salvar o XML com dados do CEP:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Visible = False
+      end
+      object btnOK: TBitBtn
+        Left = 186
+        Top = 39
+        Width = 98
+        Height = 30
+        Cursor = crHandPoint
+        Caption = 'OK'
+        Default = True
+        Glyph.Data = {
+          76060000424D7606000000000000360400002800000018000000180000000100
+          08000000000040020000120B0000120B000000010000640000000A7D0A00E6E6
+          E6008DD3990041D0730041B24300CED7CE00259A2D0074B37400C1C1C100FFFF
+          FF003CC05E004AD57C00AAC1AA002AA23F00198A1900EEF6EE0058BD6400BBCB
+          BB00A4D4A400CBE7CB0060D98B0039AA4B0081B08100ADDBAE00BAEECB0034B5
+          50003CC36100389F3800C3E1C30084CB8400399639008DE3AB0063AA630051B6
+          5200EFEFEF00459B4500DCEDDC00DDDDDD00A7E0B20043D4780073DD9900ABEB
+          C10072C4790093D193000F810F0042CD6E0030A0300072DD97003FAF3F0080C6
+          800042BC530041B64900CCEED40068BC6800C4C4C400E7EFE700218C210038A8
+          38003CC7680041C15B0082E2A4001F9A3300A5E6B90042D67300ABD1AB003AA6
+          3F004CAD4C009CDCA900F7F7F700B9DFB90056D78400D4F3DF00B9E6C3007DCB
+          8900D3D3D300D9E3D9009AE7B5006CC173007CC27C002091200047B2470043BC
+          590042C66300D7ECD70029992900ADC7AD00C4E7C90095D59C0031A5450060BB
+          6400A5DEA50066DB8E00AEDEB20094E5AF0035A435003CAC3C0042C56B002A9C
+          2E00A5E6B5000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000090909090909
+          0909090909090909090909090909090909090909090909090909444444444444
+          4444444444440909090909090909090944220101010101010101010101010122
+          0909090909090909224A36080808080808080808080836252209090909090909
+          222C0000000000000000000000000016010909090909090944233D2727272727
+          2727272727270300014409090909090909371E0D0B272727272727272727272C
+          01440909090909090909371E5846273B040404040427272C0144090909090909
+          090909371E150B27323333333327270E01440909090909090909094405383A27
+          3B3333333327273801440909090909090909092211062727323232323227274F
+          0144094444440909090922252019272D3B3B3B3B3B2727540144092422224444
+          4422250C610327525252522752272754014409531C4B0101254A0C1B1A272752
+          52030B282727276101440937451240115507410A27272D2D272F3E491F27272E
+          014409091C56432A10512D272727275B3E025F424D5D275E014409090F173429
+          2F0B2727143C1826593553374E2A4C390144090909372B5C3447474748572121
+          5C0909094431315F010909090909445A35503030211D13090909090909441D30
+          4409090909090909094444440909090909090909090909090909090909090909
+          0909090909090909090909090909090909090909090909090909090909090909
+          0909090909090909090909090909090909090909090909090909090909090909
+          0909090909090909090909090909090909090909090909090909}
+        TabOrder = 0
+        OnClick = btnOKClick
+      end
+      object editCep: TEdit
+        Left = 24
+        Top = 43
+        Width = 137
+        Height = 21
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Memo1: TMemo
+        Left = 24
+        Top = 94
+        Width = 401
+        Height = 75
+        TabOrder = 2
+      end
+      object editCaminho: TEdit
+        Left = 312
+        Top = 17
+        Width = 137
+        Height = 21
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+        Text = 'C:\'
+        Visible = False
+      end
+      object Memo2: TMemo
+        Left = 24
+        Top = 175
+        Width = 401
+        Height = 66
+        TabOrder = 4
+      end
+    end
+  end
+  object XMLDocument1: TXMLDocument
+    Left = 240
+    Top = 96
+    DOMVendorDesc = 'MSXML'
+  end
+  object XMLDocument2: TXMLDocument
+    Left = 344
+    Top = 96
+    DOMVendorDesc = 'MSXML'
+  end
+  object SSLIO: TIdSSLIOHandlerSocketOpenSSL
+    MaxLineAction = maException
+    Port = 0
+    DefaultPort = 0
+    SSLOptions.Mode = sslmUnassigned
+    SSLOptions.VerifyMode = []
+    SSLOptions.VerifyDepth = 0
+    Left = 344
+    Top = 40
+  end
+  object IdHTTP: TIdHTTP
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html, */*'
+    Request.BasicAuthentication = True
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 48
+    Top = 289
+  end
+end
